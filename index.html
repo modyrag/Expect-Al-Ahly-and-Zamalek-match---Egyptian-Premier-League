@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>توقع مباره الاهلي vs  الزمالك</title>
+  <style>
+  body{
+    background-color: #122237;
+/*    filter: brightness(60%);*/
+  }
+    img{
+      width: 8vh;height: 8vh;
+    }
+    div{
+    background-color: #0B1727;
+    width:80vw;height: 40vh;
+    border-radius: 3vw;
+    position: absolute;
+    top:30vh;
+    left:10vw;
+    box-shadow: 0px 3px 13px 0px #0A111A94;
+    filter: brightness(100%);
+    }
+    header{
+    background-color: #FFFFFF;
+    width:80vw;height: 8vh;
+    border-radius: 3vw;
+    position: absolute;
+    top:0vh;
+    left:0vw;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    text-align: center;
+      text-indent: 2vw;
+      font-size: 4vw;
+      font-weight: 450;
+      color: #515151
+    font-family: monospace;
+}
+  #FirstClub{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 2vw #C56F6F8F;
+    position: absolute;bottom: 15vh;
+    left:4vw;
+backdrop-filter: blur(77px);
+background: #FFEEEE8F;
+  }
+#first{
+width: 20vw;
+height: 20vw;
+border-radius: 50%;
+box-shadow: 0px 0px 0.8vw 0vw #2F2F2F8F;
+position: absolute;
+backdrop-filter: blur(77px);
+background: #FFFFFF;  
+} 
+
+  section{
+    text-align: center;
+    line-height:15vh;
+  }
+  #SecClub{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 2vw #6F8EC58F;
+    position: absolute;bottom: 15vh;
+    right:4vw;
+backdrop-filter: blur(77px);
+background: #EEF4FF8F;
+  } 
+#sec{
+width: 20vw;
+height: 20vw;
+border-radius: 50%;
+box-shadow: 0px 0px 0.8vw 0vw #2F2F2F8F;
+position: absolute;
+backdrop-filter: blur(77px);
+background: #FFFFFF;  
+} 
+span{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172542
+}
+#day{
+  font-size: 4vw;
+font-weight: 600;
+  position: absolute;
+  top: 8vh;text-align: center;
+  left: 27vw;color: #FFF3F3;
+font-family: monospace;
+}
+#results{
+  font-size: 8vw;
+  font-weight: 1000;
+  position: absolute;
+  top: 15vh;
+  text-align: center;
+  left: 30vw;
+  color: #FFF5F5
+}
+#f{
+  color: #C84141
+}
+#s{
+ color: #6F8EC58F 
+}
+footer{
+    width:30vw;height: 4vh;
+    border-radius: 1vw;
+    position: absolute;
+    top:30vh;
+    left:25vw;
+    box-shadow: 0px 3px 13px 0px #43393996;
+    text-align: center;
+    line-height: 3.5vh;
+    color: white;background-color: #2669C2;
+    cursor: pointer;
+    font-size: 3vw
+    }
+ 
+ </style>
+</head>
+
+<body>
+
+<div id="card">
+ <header>
+<img src="Egyptian_Football_Association.svg" style="width: 8vw;height: 8vw;
+position: relative;top:3vw;left:-2vw
+">
+<span>Primier Egyptian League 
+</span>
+ </header>
+ <p id="day">13 - July</p>
+ <p id="results">
+   <span id="f">2</span> : <span id="s">0</span>
+ </p>
+ <section id="FirstClub">
+   <section id="first">
+     <img src="1688932297051.svg">
+   </section>
+ </section>
+
+ <section id="SecClub">
+   <section id="sec">
+     <img src="1688932297007.svg">
+
+   </section>
+ </section>
+ <footer id="click">
+Match Result </footer>
+</div>
+
+<script>
+  var click =document.getElementById("click");
+  var f =document.getElementById("f");
+  var s =document.getElementById("s");
+  var flag =true;
+   var result1 ; var result2;
+  click.onclick=function(){
+   result1 =Math.floor(Math.random()*5);
+   result2 =Math.floor(Math.random()*5);
+    document.getElementById("f").innerHTML =result1;
+    document.getElementById("s").innerHTML =result2;
+  };
+</script>
+</body>
+
+</html>
